@@ -1,0 +1,65 @@
+/* Estilos base para la tabla */
+.mi-tabla {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 25px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para celdas */
+.mi-tabla th, 
+.mi-tabla td {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Estilos para encabezados */
+.mi-tabla th {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Filas pares */
+.mi-tabla tr:nth-child(even) {
+    background-color: #e3f2fd;
+}
+
+/* Filas impares */
+.mi-tabla tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efecto hover */
+.mi-tabla tr:hover {
+    background-color: #f8bbd0;
+    transition: background-color 0.3s ease;
+}
+
+/* Última fila con estilo especial */
+.mi-tabla tr:last-child {
+    border-bottom: 2px solid #6a1b9a;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .mi-tabla {
+        width: 95%;
+        font-size: 14px;
+    }
+    
+    .mi-tabla th, 
+    .mi-tabla td {
+        padding: 8px 10px;
+    }
+}

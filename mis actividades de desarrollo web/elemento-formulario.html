@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .formulario-grupo {
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h2>&#127913; Formulario de Registro Personal &#128640;</h2>
+    
+    <form action="procesar.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Información Principal</legend>
+            
+            <!-- Campo de texto con estructura diferente -->
+            <div class="formulario-grupo">
+                <label for="nombre_completo">Nombre completo:</label>
+                <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Escribe tu nombre" required>
+            </div>
+            
+            <!-- Campo de contraseña con estructura mejorada -->
+            <div class="formulario-grupo">
+                <label for="clave_acceso">Contraseña de acceso:</label>
+                <input type="password" id="clave_acceso" name="clave_acceso" placeholder="Min. 8 caracteres" required>
+            </div>
+            
+            <!-- Campo de correo con otro nombre de ID -->
+            <div class="formulario-grupo">
+                <label for="email_contacto">Correo de contacto:</label>
+                <input type="email" name="email_contacto" id="email_contacto" placeholder="ejemplo@dominio.com" required>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <!-- Campo numérico con límites diferentes -->
+            <div class="formulario-grupo">
+                <label for="edad_usuario">¿Cuántos años tienes?</label>
+                <input type="number" id="edad_usuario" name="edad_usuario" min="18" max="120">
+            </div>
+            
+            <!-- Campo de fecha con atributo adicional -->
+            <div class="formulario-grupo">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" max="2010-01-01">
+            </div>
+            
+            <!-- Campo de hora con estructura reorganizada -->
+            <div class="formulario-grupo">
+                <label for="hora_preferida">Horario preferido para contacto:</label>
+                <input type="time" name="hora_preferida" id="hora_preferida">
+            </div>
+            
+            <!-- Lista desplegable con países diferentes -->
+            <div class="formulario-grupo">
+                <label for="pais_origen">País de origen:</label>
+                <select id="pais_origen" name="pais_origen">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="es">España</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="pe">Perú</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <!-- Botones de radio con opciones diferentes -->
+            <div class="formulario-grupo">
+                <p>¿Cómo prefieres ser contactado?</p>
+                <input type="radio" name="contacto" id="contacto_email" value="email">
+                <label for="contacto_email">Email</label>
+                <input type="radio" name="contacto" id="contacto_telefono" value="telefono">
+                <label for="contacto_telefono">Teléfono</label>
+                <input type="radio" name="contacto" id="contacto_whatsapp" value="whatsapp">
+                <label for="contacto_whatsapp">WhatsApp</label>
+            </div>
+            
+            <!-- Casillas con otras opciones -->
+            <div class="formulario-grupo">
+                <p>Temas que te interesan:</p>
+                <input type="checkbox" name="temas" id="tecnologia" value="tecnologia">
+                <label for="tecnologia">Tecnología</label>
+                <input type="checkbox" name="temas" id="viajes" value="viajes">
+                <label for="viajes">Viajes</label>
+                <input type="checkbox" name="temas" id="cocina" value="cocina">
+                <label for="cocina">Cocina</label>
+                <input type="checkbox" name="temas" id="musica" value="musica">
+                <label for="musica">Música</label>
+            </div>
+            
+            <!-- Campo de archivo con indicaciones -->
+            <div class="formulario-grupo">
+                <label for="documento_id">Documento de identidad (PDF/JPG):</label>
+                <input type="file" name="documento_id" id="documento_id" accept=".pdf,.jpg,.jpeg">
+            </div>
+            
+            <!-- Área de texto con placeholder en vez de texto predeterminado -->
+            <div class="formulario-grupo">
+                <label for="mensaje_adicional">Información adicional:</label><br>
+                <textarea name="mensaje_adicional" id="mensaje_adicional" rows="4" cols="40" placeholder="Escribe aquí cualquier información adicional que consideres relevante..."></textarea>
+            </div>
+        </fieldset>
+        
+        <!-- Botones con estilos y textos diferentes -->
+        <div class="formulario-grupo" style="margin-top: 20px;">
+            <button type="submit" style="background-color: #3498db; color: white; padding: 8px 15px; border: none;">Completar registro</button>
+            <button type="reset" style="background-color: #e74c3c; color: white; padding: 8px 15px; border: none;">Borrar datos</button>
+        </div>
+    </form>
+</body>
+</html>

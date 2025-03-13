@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Cristóbal Colón</title>
+</head>
+<body>
+
+    <h1>Universidad Cristóbal Colón</h1>
+    <h2>Evaluación Parcial</h2>
+    <h3>David Bordonave Posadas</h3>
+   
+    <img src="EscudodelaUCC.png" alt="Logotipo de la Universidad Cristóbal Colón">
+
+    <h3>Películas favoritas</h3>
+    <ol reversed>
+        <li>Flow</li>
+        <li>La semilla de la higuera sagrada</li>
+        <li>Emilia Pérez</li>
+        <li>La chica de la aduana</li>
+        <li>Aún estoy aquí</li>
+    </ol>
+
+    <h3>Datos de estatura y peso</h3>
+    <table border="1">
+        <tr>
+            <th>Rango de edades</th>
+            <th colspan="2">Mujeres</th>
+            <th colspan="2">Hombres</th>
+            <th colspan="2">Promedio General</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Estatura</th>
+            <th>Peso</th>
+            <th>Estatura</th>
+            <th>Peso</th>
+            <th>Estatura</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <td>5-10</td>
+            <td>0.9</td>
+            <td>36</td>
+            <td>1.1</td>
+            <td>38</td>
+            <td>1.0</td>
+            <td>36.5</td>
+        </tr>
+        <tr>
+            <td>11-15</td>
+            <td>0.98</td>
+            <td>40</td>
+            <td>1.2</td>
+            <td>65</td>
+            <td>1.3</td>
+            <td>52.5</td>
+        </tr>
+        <tr>
+            <td>16-20</td>
+            <td>1.50</td>
+            <td>55</td>
+            <td>1.72</td>
+            <td>70</td>
+            <td>1.61</td>
+            <td>57.5</td>
+        </tr>
+        <tr>
+            <td>21-30</td>
+            <td>1.60</td>
+            <td>60</td>
+            <td>1.73</td>
+            <td>75</td>
+            <td>1.65</td>
+            <td>92.5</td>
+        </tr>
+        <tr>
+            <td>31-35</td>
+            <td>1.67</td>
+            <td>60</td>
+            <td>1.73</td>
+            <td>78</td>
+            <td>1.7</td>
+            <td>71</td>
+        </tr>
+        <tr>
+            <td>35-40</td>
+            <td>1.62</td>
+            <td>60</td>
+            <td>1.71</td>
+            <td>60</td>
+            <td>1.69</td>
+            <td>70</td>
+        </tr>
+    </table>
+
+    <h3>Formulario de registro</h3>
+    <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="DD/MM/AAAA"><br><br>
+
+        <label>Estado civil:</label><br>
+        <input type="radio" id="soltero" name="estado_civil" value="Soltero">
+        <label for="soltero">Soltero</label>
+        <input type="radio" id="casado" name="estado_civil" value="Casado">
+        <label for="casado">Casado</label><br><br>
+
+        <label for="intereses">Principales intereses:</label>
+        <select id="intereses" name="intereses">
+            <option value="tecnologia">Tecnología</option>
+            <option value="deportes">Deportes</option>
+            <option value="musica">Música</option>
+            <option value="arte">Arte</option>
+        </select><br><br>
+
+        <label for="residencia">Lugar de residencia:</label>
+        <input type="text" id="residencia" name="residencia"><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">cancelar</button>
+    </form>
+
+</body>
+</html>

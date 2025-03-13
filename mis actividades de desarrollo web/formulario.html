@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Acceso</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .contenedor-login {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .campo-entrada {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        .botones {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .btn-acceder {
+            background-color: #4CAF50;
+            color: white;
+            flex-grow: 2;
+            margin-right: 10px;
+        }
+        
+        .btn-limpiar {
+            background-color: #f1f1f1;
+            color: #333;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-login">
+        <h2>Acceso al Sistema</h2>
+        <form action="procesar-login.php" method="post">
+            <div class="campo-entrada">
+                <label for="nombre_usuario">Nombre de usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+            
+            <div class="campo-entrada">
+                <label for="clave_acceso">Contraseña:</label>
+                <input type="password" id="clave_acceso" name="clave_acceso" placeholder="Ingresa tu contraseña" required>
+            </div>
+            
+            <div class="campo-entrada">
+                <input type="checkbox" id="recordar" name="recordar">
+                <label for="recordar" style="display: inline;">Recordar mis datos</label>
+            </div>
+            
+            <div class="botones">
+                <button type="submit" class="btn-acceder">Acceder</button>
+                <button type="reset" class="btn-limpiar">Limpiar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

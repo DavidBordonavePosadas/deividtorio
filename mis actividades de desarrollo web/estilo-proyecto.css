@@ -1,0 +1,73 @@
+/* Estilo para títulos principales */
+h1 {
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+/* Barra de navegación */
+.menu-principal {
+    padding: 1.5rem 3rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Organización de elementos en el menú */
+.menu-contenido {
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* Sección destacada */
+.seccion-destacada {
+    background-color: #e8f4f8;
+    min-height: 500px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Contenido principal de la sección destacada */
+.contenido-principal {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen de perfil */
+.imagen-perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.imagen-perfil:hover {
+    transform: scale(1.05);
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo-marca {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Media queries para tablets y dispositivos medianos */
+@media screen and (min-width: 769px) {
+    .imagen-inferior { 
+        max-width: 450px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .seccion-destacada {
+        min-height: 550px;
+    }
+}

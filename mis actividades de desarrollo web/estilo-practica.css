@@ -1,0 +1,131 @@
+body {
+    margin: 30px 60px 120px 180px;
+    background: linear-gradient(0deg, #a3d8ff 40%, #f8f8f8 100%);
+    font-family: Verdana, sans-serif;
+    color: #444;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 25px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.banner-imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.banner-imagen img {
+    width: 450px;
+    padding: 15px;
+    border-radius: 15%;
+    border: 4px ridge #00ccff;
+    background: linear-gradient(0deg, #ff3300 0%, #f0f0f0 100%);
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #6a0dad;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: left;
+    margin: 15px auto;
+    font-style: italic;
+}
+
+.contenido-principal section {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 22px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12);
+}
+
+.lista-categorias {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.contenedor-imagenes figure {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.contenedor-imagenes img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-imagenes img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+.tabla-animales {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.tabla-animales, .tabla-animales th, .tabla-animales td {
+    border: 1px solid #777;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-animales th {
+    background: #ffbb33;
+    color: #222;
+    font-weight: bold;
+}
+
+.tabla-animales td {
+    background: #fafafa;
+}
+
+.tabla-animales tr:nth-child(even) td {
+    background: #f2f2f2;
+}
+
+.beneficios-desventajas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.beneficios, .desventajas {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12);
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #f0f0f0;
+    margin-top: 30px;
+    border-radius: 8px;
+}
